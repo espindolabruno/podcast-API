@@ -72,7 +72,7 @@ PodManager é um aplicativo no estilo Netflix que centraliza diferentes podcasts
 
 - **Filtrar Episódios por Nome de Podcast**: Retorna episódios de um podcast específico.
 
-    **Rota**: `/api/episode?name=Flow`
+    **Rota**: `/api/episode?e=Flow`
 
     **Exemplo de uso**:
 
