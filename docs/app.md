@@ -3,8 +3,6 @@
 ## Descrição
 - Um app ao estilo netflix onde eu possa centralizar diferentes podcasts separados por categoria
 
-### Domínio 
-- Podcasts feitos em vídeos
 
 ### funcionalidades
 - Listar os podcasts em seções categoriazadas
