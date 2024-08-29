@@ -29,8 +29,7 @@ PodManager é um aplicativo no estilo Netflix que centraliza diferentes podcasts
 1. **Clone o repositório**:
 
     ```bash
-    git clone https://github.com/seu-usuario/PodManager.git
-    cd PodManager
+    git clone https://github.com/espindolabruno/podcast-API
     ```
 
 2. **Instale as dependências**:
@@ -48,47 +47,47 @@ PodManager é um aplicativo no estilo Netflix que centraliza diferentes podcasts
 3. **Inicie o servidor**:
 
     ```bash
-    npm start
+    npm run dev
     ```
 
     ou, com Yarn:
 
     ```bash
-    yarn start
+    yarn run dev
     ```
 
-    O servidor estará rodando por padrão na porta `3000`. Você pode acessá-lo em `http://localhost:3000`.
+    O servidor estará rodando por padrão na porta `3333`. Você pode acessá-lo em `http://localhost:3333`.
 
 ### Endpoints Disponíveis
 
 - **Listar Podcasts**: Retorna uma lista de podcasts categorizados.
   
-    **Rota**: `/list`
+    **Rota**: `/api/list`
 
     **Exemplo de uso**:
 
     ```bash
-    curl http://localhost:3000/list
+    curl http://localhost:3000/api/list
     ```
 
 - **Filtrar Episódios por Nome de Podcast**: Retorna episódios de um podcast específico.
 
-    **Rota**: `/episode?name=Flow`
+    **Rota**: `/api/episode?name=Flow`
 
     **Exemplo de uso**:
 
     ```bash
-    curl http://localhost:3000/episode?name=Flow
+    curl http://localhost:3333/api/episode?e=Flow
     ```
 
 - **Filtrar Podcasts por Categoria**: Retorna podcasts de uma categoria específica.
 
-    **Rota**: `/category?c=music`
+    **Rota**: `/api/category?c=music`
 
     **Exemplo de uso**:
 
     ```bash
-    curl http://localhost:3000/category?c=music
+    curl http://localhost:3333/api/category?c=music
     ```
 
 ## Como Implementar:
@@ -150,10 +149,3 @@ export const app = async (req: http.IncomingMessage, res: http.ServerResponse<ht
 ## Licença
 Este projeto é licenciado sob a [Licença MIT](LICENSE).
 ```
-
-### Explicação:
-
-- **Pré-requisitos e Instalação**: Guias para clonar o repositório, instalar dependências e iniciar o servidor.
-- **Endpoints Disponíveis**: Exemplos de como utilizar os endpoints da API, com exemplos de uso via `curl` para facilitar testes.
-  
-Essa seção é útil para qualquer pessoa que queira rodar seu projeto localmente ou interagir com a API diretamente. Ela também deixa o uso do projeto mais intuitivo para novos colaboradores ou para você mesmo, no futuro.
